@@ -27,6 +27,10 @@ const Contact = () => {
       e.preventDefault()
       setLoading(true);
 
+    
+
+      
+
       emailjs.send("service_7hs5zg1","template_boucdfj",
          {
           from_name : form.name,
@@ -79,6 +83,7 @@ const Contact = () => {
                  value={form.name}
                  onChange={handleChange}
                  placeholder="What's your name"
+                 required
                  className='bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:text-[14px] sm:placeholder:text-[16px] text-white outline-none font-medium border-none rounded-lg'
                ></input>
             </label>
@@ -90,6 +95,7 @@ const Contact = () => {
                  name="email"
                  value={form.email}
                  onChange={handleChange}
+                 required
                  placeholder="What's your E-mail"
                  className='bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:text-[14px] sm:placeholder:text-[16px] text-white outline-none font-medium border-none rounded-lg'
                ></input>
@@ -103,6 +109,7 @@ const Contact = () => {
                   name="message"
                   value={form.message}
                   onChange={handleChange}
+                  required
                   placeholder="Write Your Message Here"
                   className='bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:text-[14px] sm:placeholder:text-[16px] text-white outline-none font-medium  border-none rounded-lg'
                 ></textarea>
