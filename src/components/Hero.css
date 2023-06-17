@@ -1,0 +1,107 @@
+.avtar-image img {
+    width: 22rem;
+    padding: 1.5rem;
+    object-fit: cover;
+    animation-name: scaleimage;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* opacity: 0; */
+  }
+  
+  @keyframes scaleimage {
+    0% {
+      filter: grayscale(0%);
+    }
+    50% {
+      transform: scale(1.1);
+  
+      filter: grayscale(50%);
+      box-shadow: 5px 5px 10px #611fef, -5px -5px 10px #611fef;
+    }
+    100% {
+      transform: scale(1);
+      filter: grayscale(0%);
+    }
+  }
+  .dots-shape {
+    z-index: 1;
+    bottom: 0;
+    right: -15px;
+    animation-name: dotsupdown;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes dotsupdown {
+    50% {
+      transform: translateY(3rem);
+    }
+  }
+  .circle-shape {
+    bottom: 0;
+    left: 0;
+    animation-name: circleupdown;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+  @keyframes circleupdown {
+    50% {
+      left: 1%;
+      bottom: 5%;
+    }
+  }
+  .cube-shape {
+    top: -30px;
+    right: -20px;
+    animation-name: cubeupdown;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+  @keyframes cubeupdown {
+    0% {
+      transform: rotateY(0deg) translateY(0px);
+    }
+    50% {
+      transform: rotateY(180deg) translateY(-20px);
+    }
+    100% {
+      transform: rotateY(360deg) translateY(0px);
+    }
+  }
+  .zigzags-shape {
+    top: -1rem;
+    left: -1.5rem;
+    animation-name: zigzagupdown;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+  @keyframes zigzagupdown {
+    50% {
+      top: -40px;
+      left: -30px;
+    }
+  }
+  
+  .plus-shape {
+    z-index: 9;
+    top: -0.8rem;
+    left: 50%;
+    animation: shakeEffectPlus 5s ease-in infinite;
+  }
+  
+  @keyframes shakeEffectPlus {
+    50% {
+      top: 1%;
+      left: 48%;
+    }
+  }
+
+
+
